@@ -1,0 +1,9 @@
+{
+  "arrowParens": "always",
+  "endOfLine": "lf",
+  "vueIndentScriptAndStyle": false,
+  "useTabs": false,
+  "semi": false,
+  "trailingComma": "es5",
+  "singleQuote": false
+}
