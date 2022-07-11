@@ -43,7 +43,7 @@ class JoystickPositionUpdatedEvent(Event):
         return JoystickPositionUpdatedEvent(new_x, new_y, btn_int == 1)
 
     def encode(self) -> bytes:
-        return "{}:{}:{}".format(self.new_x, self.new_y, self.button_pressed).encode("ascii")
+        return "{}:{}:{}".format(self.new_x, self.new_y, 1 if self.button_pressed else 0).encode("ascii")
 
 
 # Parses event from bytes
